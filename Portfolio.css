@@ -390,7 +390,7 @@ section {
 }
 
 /* Portfolio Section */
-.portfolio {
+.projects {
     padding: 50px 0;
     background-color: var(--bg-color);
     text-align: center;
@@ -408,14 +408,14 @@ section {
     color: #00eeff;
 }
 
-.portfolio-container {
+.projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 0 50px;
 }
 
-.portfolio-box {
+.projects-box {
     background-color: var(--bg-color);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -424,24 +424,24 @@ section {
     border-top: 4px solid #00eeff;
 }
 
-.portfolio-box:hover {
+.projects-box:hover {
     transform: translateY(-10px);
 }
 
-.portfolio-layer h4 {
+.projects-layer h4 {
     font-size: 1.5rem;
     color: #fff;
     margin-bottom: 10px;
 }
 
-.portfolio-layer p {
+.projects-layer p {
     font-size: 1rem;
     color: #fff;
     line-height: 1.5;
     margin-bottom: 15px;
 }
 
-.portfolio-layer a {
+.projects-layer a {
     display: inline-block;
     text-decoration: none;
     color: #00eeff;
@@ -457,7 +457,7 @@ section {
         0 0 25px rgb(162, 230, 235);
 }
 
-.portfolio-layer a:hover {
+.projects-layer a:hover {
     background-color: #00eeff;
     color: var(--bg-color);
     border-color: #00eeff;
