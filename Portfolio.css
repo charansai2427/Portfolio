@@ -510,6 +510,7 @@ section {
 .me {
     margin-top: 2em;
     margin-left: 3em;
+    position: relative;
 }
 
 .location {
@@ -523,9 +524,9 @@ section {
     align-items: center;
     width: 40px;
     height: 40px;
-    background: transparent;
-    border: 2px solid rgb(162, 230, 235);
-    border-radius: 50px;
+    background: var(--bg-color);
+    border: none;
+    outline:none ;
     font-size: 20px;
     color: rgb(162, 230, 235);
     text-decoration: none;
@@ -537,15 +538,48 @@ section {
 }
 
 .location a:hover {
-    background: rgb(162, 230, 235);
-    color: #081b29;
-    box-shadow: 0 0 20px rgb(162, 230, 235);
+    color: rgb(162, 230, 235);
 }
 
 .loc {
-    border: .8px solid rgb(162, 230, 235);
-    border-radius: 20px;
-    font-size: 2em;
+    font-size: 1.7em;
+    border: none;
+    outline: none;
+    margin-top: 1.5em;
+}
+
+.person{
+    margin-top: 2em;
+    margin-left: 3em;
+}
+
+.person a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: var(--bg-color);
+    border: none;
+    outline:none ;
+    font-size: 20px;
+    color: rgb(162, 230, 235);
+    text-decoration: none;
+    margin-right: 10px;
+    transition: .5s;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.person a:hover{
+    color: rgb(162, 230, 235);
+}
+
+.mee{
+    font-size: 1.7em;
+    border: none;
+    outline: none;
 }
 
 .phone {
@@ -559,9 +593,9 @@ section {
     align-items: center;
     width: 40px;
     height: 40px;
-    background: transparent;
-    border: 2px solid rgb(162, 230, 235);
-    border-radius: 50px;
+    background: var(--bg-color);
+    border: none;
+    outline:none ;
     font-size: 20px;
     color: rgb(162, 230, 235);
     text-decoration: none;
@@ -573,15 +607,14 @@ section {
 }
 
 .phone a:hover {
-    background: rgb(162, 230, 235);
-    color: #081b29;
-    box-shadow: 0 0 20px rgb(162, 230, 235);
+    color: rgb(162, 230, 235);
 }
 
 .cal {
-    border: .8px solid rgb(162, 230, 235);
-    border-radius: 20px;
-    font-size: 2em;
+    font-size: 1.7em;
+    border: none;
+    outline: none;
+    margin-top:2em;
 }
 
 .mail {
@@ -595,9 +628,9 @@ section {
     align-items: center;
     width: 40px;
     height: 40px;
-    background: transparent;
-    border: 2px solid rgb(162, 230, 235);
-    border-radius: 50px;
+    background: var(--bg-color);
+    border: none;
+    outline:none ;
     font-size: 20px;
     color: rgb(162, 230, 235);
     text-decoration: none;
@@ -609,15 +642,14 @@ section {
 }
 
 .mail a:hover {
-    background: rgb(162, 230, 235);
-    color: #081b29;
-    box-shadow: 0 0 20px rgb(162, 230, 235);
+    color: rgb(162, 230, 235);
 }
 
 .ml {
-    border: .8px solid rgb(162, 230, 235);
-    border-radius: 20px;
-    font-size: 2em;
+    font-size: 1.7em;
+    border: none;
+    outline: none;
+    margin-top: 1.5em;
 }
 
 .contactform {
@@ -630,12 +662,6 @@ section {
     margin-top: 2em;
 }
 
-.para {
-    /* width: 35em; */
-    margin-left: 10em;
-    margin-right: 13em;
-    margin-bottom: 3em;
-}
 
 .contactform h2 {
     font-size: 30px;
