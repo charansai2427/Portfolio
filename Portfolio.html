@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <title>Web Developer</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="port">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#services" style="--i:3">Services</a>
+            <a href="#skills" style="--i:4">Skills</a>
+            <a href="#portfolio" style="--i:5">Portfolio</a>
+            <a href="#resume" style="--i:6">Resume</a>
+            <a href="#contact" style="--i:7">Contact</a>
+        </nav>
+    </header>
+
+    <!-- /////////////// Home ///////////// -->
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello , It's Me</h3>
+            <h1>Sai Charan </h1>
+            <h3>And I'am <span class="text"></span></h3>
+            <p>I'm a web Developer with extensive experience for over
+                <br>7 Months Internship. expertise is to create a website deisgn, Full Stack Developer, and many more...
+            </p>
+            <img class="pic-pro" src="img/Blue Neon Instagram Profile Picture.png" alt="">
+            <div class="home-sci">
+                <a href="https://www.linkedin.com/in/sai-charan-pilla-a61585290/" style="--i:8"><i
+                        class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/charansai2427/" style="--i:9"><i class='bx bxl-github'></i></a>
+                <a href="https://web.whatsapp.com/" style="--i:10"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.instagram.com/" style="--i:11"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <a href="#about" class="btn-box">More About</a>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+
+    <!-- /////////////// About ///////////// -->
+
+    <section>
+        <div class="about" id="about">
+            <div class="about-img">
+                <img src="img/Blue Neon Instagram Profile Picture.png" alt="">
+            </div>
+            <div class="about-text">
+                <h2>About <span>Me</span></h2>
+                <h4>Full Stack Developer!</h4>
+                <p>
+                    I am a Full Stack Developer with a strong foundation gained through a 7-month internship in Full
+                    Stack
+                    Web Development.
+                    <span id="dots">...</span>
+                    <span id="more" style="display: none;">
+                        During this time, I developed expertise in building complete web applications, working across
+                        both
+                        the front-end and back-end. My experience includes working with technologies like HTML, CSS,
+                        JavaScript, React, Node.js, and Database management systems. I have honed my ability to design
+                        and
+                        implement user-friendly interfaces while ensuring efficient server-side logic and API
+                        integrations,
+                        focusing on delivering scalable and robust web solutions. This role often includes collaborating
+                        across teams, solving complex problems, and ensuring that the application is scalable, secure,
+                        and
+                        user-friendly. They are capable of overseeing the complete development lifecycle, from concept
+                        to
+                        deployment.
+                    </span>
+                </p>
+                <a href="#" class="btn-boxs" id="myBtn" onclick="toggleShow()">More About Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- /////////////// Services ///////////// -->
+
+    <section>
+        <div class="services" id="services">
+            <div class="container">
+                <h1 class="sub-title">My <span>Services</span></h1>
+                <div class="services-list">
+                    <!-- Frontend Developer -->
+                    <div>
+                        <i class='bx bxs-credit-card-front' style="color:#00eeff"></i>
+                        <h2>Frontend Developer</h2>
+                        <p>
+                            Frontend Developers are tasked with creating visually appealing and interactive user
+                            interfaces,
+
+                            <span class="dots">...</span>
+                            <span class="more" style="display: none;">
+                                utilizing technologies like HTML, CSS, and JavaScript. I focus on ensuring responsive
+                                design and seamless user experiences by translating design mockups into functional web
+                                applications.
+                            </span>
+                        </p>
+                        <a href="#" class="read" onclick="toggleText(this)">Learn more</a>
+                    </div>
+
+                    <!-- Backend Developer -->
+                    <div>
+                        <i class='bx bx-code' style="color:#00eeff"></i>
+                        <h2>Backend Developer</h2>
+                        <p>
+                            Backend Developers are responsible for managing server-side logic, databases, and APIs
+                            <span class="dots">...</span>
+                            <span class="more" style="display: none;">
+                                to ensure smooth data flow and system functionality. I focus on building scalable,
+                                secure, and efficient architectures that support the frontend and handle core
+                                application operations.
+                            </span>
+                        </p>
+                        <a href="#" class="read" onclick="toggleText(this)">Learn more</a>
+                    </div>
+
+                    <!-- Full Stack Developer -->
+                    <div>
+                        <i class='bx bx-laptop' style="color:#00eeff"></i>
+                        <h2>Full Stack Developer</h2>
+                        <p>
+                            Full Stack Developers are involved in both front-end and back-end development, managing
+                            everything
+                            <span class="dots">...</span>
+                            <span class="more" style="display: none;">
+                                from user interfaces to server-side logic. I ensure the seamless integration of all
+                                components, handling databases, APIs, and system architecture to build fully functional
+                                web applications.
+                            </span>
+                        </p>
+                        <a href="#" class="read" onclick="toggleText(this)">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /////////////// Skills ///////////// -->
+
+    <section>
+        <div class="skills" id="skills">
+            <h1 class="skill">Skills</h1>
+            <div class="sks">
+                <div class="icons">
+                    <h3>Html5</h3>
+                    <i class='bx bxl-html5' style="color: rgb(228,77,38);font-size: 2em;"></i>
+                </div>
+                <div class="icons">
+                    <h3>CSS3</h3>
+                    <i class='bx bxl-css3' style="color: rgb(58, 81, 193);font-size: 2em;"></i>
+                </div>
+                <div class="icons">
+                    <h3>Bootstrap</h3>
+                    <i class='bx bxl-bootstrap' style="color: rgb(140, 52, 180);font-size: 2em;"></i>
+                </div>
+                <div class="icons">
+                    <h3>TailWind CSS</h3>
+                    <i class='bx bxl-tailwind-css' style="color: rgb(33, 159, 193);font-size: 2em;"></i>
+                </div>
+                <div class="icons">
+                    <h3>JavaScript</h3>
+                    <i class='bx bxl-javascript' style="color: rgb(216, 232, 39);font-size: 2em;"></i>
+                </div>
+                <div class="icons">
+                    <h3>React.Js</h3>
+                    <i class='bx bxl-react' style="color: rgb(22, 122, 185);font-size: 2em;"></i>
+                </div>
+                <div class="icons">
+                    <h3>Node.Js</h3>
+                    <i class='bx bxl-nodejs' style="color: rgb(12, 102, 18);font-size: 2em;"></i>
+                </div>
+                <div class="icons">
+                    <h3>Express.Js</h3>
+                    <i class='bx bxl-nodejs' style="color: rgb(12, 102, 18);font-size: 2em;"></i>
+                </div>
+                <div class="icons">
+                    <h3>MongoDB</h3>
+                    <i class='bx bxl-mongodb' style="color: rgb(23, 212, 35);font-size: 2em;"></i>
+                </div>
+                <div class="icons">
+                    <h3>Github</h3>
+                    <i class='bx bxl-github' style="color: rgb(0, 0, 0);font-size: 2em;"></i>
+                </div>
+                <div class="icons">
+                    <h3>Git</h3>
+                    <i class='bx bxl-git' style="color: rgb(182, 72, 72);font-size: 2em;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /////////////// Portfolio ///////////// -->
+
+
+    <section class="portfolio" id="portfolio">
+        <h1 class="sub-tit">Latest <span>Projects</span></h1>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <div class="portfolio-layer">
+                    <h4>Job Board</h4>
+                    <p>Full-Stack MERN application enabling users to search for and apply to job postings.
+                        Developed robust job search features, filtering options, and personalized recommendations.
+                        Implemented user authentication with JWT and used React Router for dynamic routing.</p>
+                    <a href="https://github.com/charansai2427/Job_Board_Mern">View Project</a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <div class="portfolio-layer">
+                    <h4>Music Player</h4>
+                    <p>A custom web-based music player with sleek visuals and smooth audio controls, built using HTML,
+                        CSS, and JavaScript.
+                        Supports common audio formats and can be customized for any websit's theme.</p>
+                    <a href="https://github.com/charansai2427/Music_Player_Without_Api">View Project</a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <div class="portfolio-layer">
+                    <h4>Pexels Clone</h4>
+                    <p>React.js-based image gallery mimicking Pexels. Features a masonry-style layout using CSS Grid,
+                        real-time search filtering, and optimized image loading for improved performance.</p>
+                    <a href="https://github.com/charansai2427/Pexel-Clone">View Project</a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <div class="portfolio-layer">
+                    <h4>Blog Post</h4>
+                    <p>A fully functional blog platform developed using the MERN stack. Features include user
+                        authentication,
+                        CRUD operations, and robust API integration for managing blog posts.</p>
+                    <a href="https://github.com/charansai2427/Orinson_BlogPost">View Project</a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <div class="portfolio-layer">
+                    <h4>To-do List</h4>
+                    <p>A task management application built using the MERN stack. Includes CRUD functionalities for tasks
+                        such as adding,
+                        editing, deleting, and marking tasks as complete.</p>
+                    <a href="https://github.com/charansai2427/Orinson_To-Do-List">View Project</a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <div class="portfolio-layer">
+                    <h4>Contact Form</h4>
+                    <p>A full stack web application allowing users to submit their contact information. Features data
+                        validation,
+                        submission, and storage in a database using the MERN stack.</p>
+                    <a href="https://github.com/charansai2427/Orinson_Contact_Form">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- /////////////// Resume ///////////// -->
+
+    <section class="resume" id="resume">
+        <h2 class="titles-cv" id="titles-cv">Download My Cv: <span>Click Here</span></h2>
+    </section>
+
+    <!-- /////////////// Contact ///////////// -->
+
+    <section class="contact" id="contact">
+        <h1 class="sub-title">Contact <span>Us</span></h1>
+
+        <div class="para">If you need any technical support, assistance or collaboration in your project. If you don't
+            get an answer immediately. I might just be traveling through the middle of nowhere. I'll
+            get back to you as soon as I can.That's a promise!
+        </div>
+
+        <div class="me">
+            <div class="location">
+
+                <a href="#"><ion-icon name="location-outline" class="loc"></ion-icon></a>
+                <p>Add<span>ress</span></p>
+                <p>B-Zone Park, Sujatha Nagar
+                    <br>Pendurthi, Visakhapatnam - 530051
+                    <br>Andhra Pradesh, India
+                </p>
+            </div>
+            <div class="phone">
+                <a href="#"><ion-icon name="call-outline" class="cal"></ion-icon></a>
+                <p>+91-9949895913</p>
+            </div>
+            <div class="mail">
+                <a href="#"><ion-icon name="mail-outline" class="ml"></ion-icon></a>
+                <p>charan7728264@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="contactform">
+            <form>
+                <h2 class="sub-titlec" style="font-weight: bold;">Contact<span>Me</span></h2>
+                <div class="inputbox">
+                    <input type="text" required="required">
+                    <span>Full Name</span>
+                </div>
+                <div class="inputbox">
+                    <input type="email" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inputbox">
+                    <textarea required="required"></textarea>
+                    <span>Type Your Message...</span>
+                </div>
+                <div class="inputbox">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- /////////////// Footer ///////////// -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by @Sai Charan | All Rights Reserved.</p>
+        </div>
+        
+        <div class="footer-iconTop">
+            <a href="https://www.linkedin.com/in/sai-charan-pilla-a61585290/"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://github.com/charansai2427/"><i class='bx bxl-github'></i></a>
+            <a href="#home"><i class='bx bxs-chevron-up-circle'></i></a>
+        </div>
+    </footer>
+
+</body>
+<script src="Portfolio.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
